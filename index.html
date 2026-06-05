@@ -12,31 +12,31 @@
     <section id="landing">
         <nav>
             <div class="nav_container">
-                <img class="logo" src="./assets/Library.svg" alt="">
-                <ul class="nav_links">
-                    <li><a href="#landing" class="nav_link">Home</a></li>
-                    <li><a href="#" class="nav_link no-cursor">Contact</a></li>
-                    <li><a href="#features" class="nav_link nav_link--primary">Books</a></li>
-                </ul>
-            </div>
-            <button class="btn_menu" onclick="openMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="menu_backdrop">
-                <button class="btn_menu btn_menu--close" onclick="closeMenu()">
-                    <i class="fa-solid fa-times"></i>
+                    <img class="logo" src="./assets/Library.svg" alt="">
+                    <ul class="nav_links">
+                        <li><a href="#landing" class="nav_link">Home</a></li>
+                        <li><a href="#" class="nav_link no-cursor">Contact</a></li>
+                        <li><a href="#features" class="nav_link nav_link--primary">Books</a></li>
+                    </ul>
+                <button class="btn_menu" onclick="openMenu()">
+                    <i class="fa-solid fa-bars"></i>
                 </button>
-                <ul class="menu_links">
-                    <li class="menu_list">
-                        <a href="#" class="menu_link">Home</a>
-                    </li>
-                    <li class="menu_list">
-                        <a href="#features" class="menu_link">Books</a>
-                    </li>
-                    <li class="menu_list">
-                        <a href="#" class="menu_link no-cursor">Contact</a>
-                    </li>
-                </ul>
+                <div class="menu_backdrop">
+                    <button class="btn_menu btn_menu--close" onclick="closeMenu()">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                    <ul class="menu_links">
+                        <li class="menu_list">
+                            <a href="#" class="menu_link" onclick="closeMenu()">Home</a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="#features" class="menu_link" onclick="closeMenu()">Books</a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="#" class="menu_link no-cursor" onclick="closeMenu()">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <header>
@@ -344,8 +344,8 @@
                     <h2 class="section_title">
                         Explore more <span class="text-purple">Books</span>
                     </h2>
-                    <a href="#features">
-                        <div class="explore_button">
+                    <a class="explore_button" href="#features">
+                        <div >
                             <button class="btn">Browse Books</button>
                         </div>
                     </a>
